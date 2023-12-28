@@ -123,18 +123,10 @@ export default function Nabvar() {
           />
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
-          <motion.a
-            href="/"
-            target="_blank"
-            className="w-6 mr-3"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <TwitterIcon />
             {/*<Image src="./svgs/Twitter.svg" alt="Follow us on Twitter" width={32} height={32}></Image>*/}
-          </motion.a>
+
           <motion.a
-            href="/"
+            href="https://github.com/Grajfo"
             target="_blank"
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
@@ -143,7 +135,7 @@ export default function Nabvar() {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="/"
+            href="https://www.linkedin.com/in/%C5%BEan-grajfoner-01a2b0179/"
             target="_blank"
             className="w-6 ml-3"
             whileHover={{ y: -2 }}
