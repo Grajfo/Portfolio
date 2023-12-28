@@ -25,7 +25,11 @@ const CustomLink = (podatki: Podatki) => {
   const pathname = usePathname();
 
   return (
-    <Link href={podatki.link} className={`${podatki.className} relative group`} scroll={false}>
+    <Link
+      href={podatki.link}
+      className={`${podatki.className} relative group`}
+      scroll={false}
+    >
       {podatki.title}
 
       <span
@@ -47,10 +51,10 @@ const MobileCustomLink = (podatki: Podatki) => {
   const router = useRouter();
 
   const handleClick = () => {
-    if(typeof podatki.toggle === "function") {
+    if (typeof podatki.toggle === "function") {
       podatki.toggle();
     }
-   
+
     router.push(podatki.link);
   };
 
@@ -164,8 +168,8 @@ export default function Nabvar() {
       {/*mobile menu*/}
       {isOpen ? (
         <motion.div
-        initial={{scale:0, opacity:0, x: "-50%", y: "-50%"}}
-        animate={{scale:1, opacity:1}}
+          initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
+          animate={{ scale: 1, opacity: 1 }}
           className="min-w-[70vw] flex flex-col justify-between z-30 items-center 
     fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
     bg-dark/90 dark:bg-light/90 rounded-lg backdrop-blur-md py-32"

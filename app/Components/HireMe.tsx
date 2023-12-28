@@ -9,8 +9,10 @@ function HireMe() {
     md:right-8 md:left-auto md:top-0 md:bottom-auto md:absolute
     sm:right-0"
     >
-      <div className="w-56 h-auto flex items-center justify-center relative
-      md:w-24 ">
+      <div
+        className="w-56 h-auto flex items-center justify-center relative
+      md:w-24 "
+      >
         <CircularButton
           className={"fill-dark animate-spin-slow dark:fill-light"}
         />

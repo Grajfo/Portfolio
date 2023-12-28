@@ -38,8 +38,10 @@ const Details = (det: Details) => {
             @{det.company}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75 dark:text-light/75
-        xs:text-sm">
+        <span
+          className="capitalize font-medium text-dark/75 dark:text-light/75
+        xs:text-sm"
+        >
           {det.time} | {det.address}
         </span>
         <p className="font-medium w-full md:text-sm">{det.work}</p>
@@ -68,40 +70,46 @@ function Expirience() {
           className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light
         md:w-[2px] md:left-[30px] xs:left-[20px]"
         />
-        <ul className="w-full flex flex-col items-start justify-between ml-4
-        xs:ml-2">
+        <ul
+          className="w-full flex flex-col items-start justify-between ml-4
+        xs:ml-2"
+        >
           <Details
-            position="Frontend Developer"
-            company="Kmetija Jelinčič"
-            companyLink="https://kmetija.com"
-            time="2021-2022"
-            address="soča 50"
-            work="Developing and maintaining the frontend of the website"
+            position="Frontend Developer and helper"
+            company="Turistična kmetija Jelinčič - kamp Jelinc, Ana Jelinčič S.P"
+            companyLink="https://kmetijakampjelincic.si/"
+            time="Jun. 2022 - Oct. 2023"
+            address="soča 50, Bovec"
+            work="Designed and Developed a appealing website leveraging a tech stack that includes HTML, CSS, JavaScript, React,
+            Tailwind CSS, TypeScript and Bootstrap. This comprehensive solution not only showcases my skills effectively but
+            also enhances the overall user experience. The website serves as a tool for attracting new customers and providing
+            them with information.
+            Maintaining and updating the website with new trends and better performance and technical help."
           />
 
           <Details
-            position="Frontend Developer"
-            company="Kmetija Jelinčič"
-            companyLink="https://kmetija.com"
-            time="2021-2022"
-            address="soča 50"
-            work="Developing and maintaining the frontend of the website"
+            position="Wordpress Developer (Freelancer)"
+            company="PartyLand"
+            companyLink="https://partyland.si/"
+            time="Oct. 2022 - Apr.2023"
+            address="Maribor, Slovenia"
+            work={`Designed e-commerce website using Elementor, complemented by custom CSS and HTML.
+            Developed online store using WordPress and integrating WooCommerce to handle e-commerce functionalities.
+            Carefully chose plugin and php customization to enhanced site's capabilities.
+            Maintaining and updating the website to ensure optimal performance and security
+            `}
           />
           <Details
-            position="Frontend Developer"
-            company="Kmetija Jelinčič"
-            companyLink="https://kmetija.com"
-            time="2021-2022"
-            address="soča 50"
-            work="Developing and maintaining the frontend of the website"
-          />
-          <Details
-            position="Frontend Developer"
-            company="Kmetija Jelinčič"
-            companyLink="https://kmetija.com"
-            time="2021-2022"
-            address="soča 50"
-            work="Developing and maintaining the frontend of the website"
+            position="Practical traning"
+            company="Flawless code"
+            companyLink="https://flawless-code.com/flawlesscode-slovenija/"
+            time="Mar. 2019 - May 2019"
+            address="Maribor, Slovenia"
+            work=" Developed a mobile game in unity based on old arcade games.
+            Developed RESTful API using .Net Core integrated with MySql server to simulate the meal preparation process for
+            hospital setting.
+            Developed a program to serialize the ”drumkit.xml file for their music sample folder and it also provides the
+            capability to deserialize an existing ”drumkit.xml” file back into class representation"
           />
         </ul>
       </div>

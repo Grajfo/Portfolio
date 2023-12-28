@@ -39,7 +39,7 @@ function useThemeSwitcher() {
     if (mode === "dark") {
       window.localStorage.setItem("theme", "dark");
       document.documentElement.classList.add("dark");
-    } 
+    }
     if (mode === "") {
       window.localStorage.setItem("theme", "");
       document.documentElement.classList.remove("dark");

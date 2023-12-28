@@ -22,7 +22,9 @@ const Details = (det: Details) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold sm:text-xl xs:text-lg">{det.type}</h3>
+        <h3 className="capitalize font-bold sm:text-xl xs:text-lg">
+          {det.type}
+        </h3>
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {det.time} | {det.place}
         </span>
@@ -40,8 +42,10 @@ function Education() {
   });
   return (
     <div className="my-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center
-      md:text-6xl xs:text-4xl md:mb-16">
+      <h2
+        className="font-bold text-8xl mb-32 w-full text-center
+      md:text-6xl xs:text-4xl md:mb-16"
+      >
         Education
       </h2>
       <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
@@ -50,25 +54,21 @@ function Education() {
           className="absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top
           md:w-[2px] md:left-[30px] xs:left-[20px]"
         />
-        <ul className="w-full flex flex-col items-start justify-between ml-4 
-        xs:ml-2">
+        <ul
+          className="w-full flex flex-col items-start justify-between ml-4 
+        xs:ml-2"
+        >
           <Details
-            type="Frontend Developer"
-            time="2021-2022"
-            place="soča 50"
-            info="Developing and maintaining the frontend of the website"
+            type="Faculty of electrical engineering and computer science"
+            time="Sep. 2019 - Sep. 2022"
+            place="Maribor, Slovenia"
+            info="Master’s degree in informatics and data technologies"
           />
-                    <Details
-            type="Frontend Developer"
-            time="2021-2022"
-            place="soča 50"
-            info="Developing and maintaining the frontend of the website"
-          />
-                    <Details
-            type="Frontend Developer"
-            time="2021-2022"
-            place="soča 50"
-            info="Developing and maintaining the frontend of the website"
+          <Details
+            type="Faculty of electrical engineering and computer science"
+            time="Sep. 2016 - Aug. 2019"
+            place="Maribor, Slovenia"
+            info="Bachelor of informatics and communication technologies"
           />
         </ul>
       </div>
